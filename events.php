@@ -4,32 +4,41 @@
     <meta charset="utf-8">
     <link   href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<!-- CSS for .page-header -->
+    <link   href="../css/task01.css" rel="stylesheet">
 </head>
  
 <body>
-    <div class="container">
-	
-            <div class="row">
-				<div class="page-header">
+
+	<div class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
 					<h3>Upcoming Events</h3>
 				</div>
-            </div>
+			</div>
+		</div>
+	</div>
+	
+    <div class="container" id="main">
+		<div class="row">
+		
+			<p>
+				<a href="event_create.php" class="btn btn-success">Create</a>
+			</p>
 			
-            <div class="row">
-                <p>
-                    <a href="event_create.php" class="btn btn-success">Create</a>
-                </p>
-                <table class="table table-striped table-bordered">
-                  <thead>
-                    <tr>
-                      <th>Location</th>
-                      <th>Description</th>
-                      <th>Date</th>
-					  <th>Time</th>
-                      <th>Action</th>
+			<table class="table table-striped table-bordered">
+				<thead>
+					<tr>
+						<th>Location</th>
+						<th>Description</th>
+						<th>Date</th>
+						<th>Time</th>
+						<th>Action</th>
                     </tr>
-                  </thead>
-                  <tbody>
+                </thead>
+                <tbody>
                   <?php
 					   include '../include/database.php';
 					   $pdo = Database::connect();
@@ -51,7 +60,7 @@
 					   }
 					   Database::disconnect();
                   ?>
-                  </tbody>
+                </tbody>
             </table>
         </div>
     </div> <!-- /container -->

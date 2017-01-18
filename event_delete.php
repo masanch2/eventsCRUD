@@ -35,20 +35,27 @@
 <head>
     <meta charset="utf-8">
     <link   href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script
+	
+	<!-- CSS for .page-header -->
+    <link   href="../css/task01.css" rel="stylesheet">
 </head>
  
 <body>
-    <div class="container">
-     
-        <div class="row">
-			<div class="page-header">
-				<h3>Delete an Event</h3>
-            </div>
-       </div>
-	   
-	   <div class="row">
-		<div class="col-md-6">
+
+	<div class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Delete an Event</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <div class="container" id="main">
+		<div class="row">
+			<div class="col-md-6">
                      
                 <form class="form-horizontal" action="event_delete.php" method="post">
 					<input type="hidden" name="id" value="<?php echo $id;?>"/>

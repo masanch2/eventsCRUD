@@ -62,14 +62,18 @@
 </head>
  
 <body>
-    <div class="container">
-     
-        <div class="row">
-			<div class="page-header">
-				<h3>Create an Event</h3>
+
+	<div class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Create an Event</h3>
+				</div>
 			</div>
-        </div>
-             
+		</div>
+	</div>
+	
+    <div class="container" id="main">
 		<div class="row">
 			<div class="col-md-6">
 					
